@@ -1,0 +1,349 @@
+ @import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@500&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+/* Head Nav Bar */
+.headNav{
+    background-image:linear-gradient(to bottom,rgba(192, 63, 252, 0.5),rgba(192, 63, 252,1));
+    padding:10px;
+    color:white;
+}
+.headNav >p{
+    position:relative;
+}
+
+/* Head Nav Bar Icons */
+.icon1{
+    position:absolute;
+    top:10px;
+    right:130px;
+}
+.icon2{
+    position:absolute;
+    top:10px;
+    right:90px;
+}
+.icon3{
+    position:absolute;
+    top:10px;
+    right:50px;
+}
+.icon4{
+    position:absolute;
+    top:10px;
+    right:20px;
+}
+.icon{
+   color:white;
+}
+.icon:hover{
+    color:rgba(235, 196, 86, 1);
+}
+
+/* NavBar */
+.NavBar{
+    box-shadow: 0px 1px 8px 1px gray;
+    position:relative;
+    position:sticky;
+    top:0;
+    width:100%;
+    z-index:999;
+    background-color:white;      
+}
+
+/* Arrow Icon Inside CART */
+.arrowIcon{
+    background-color:rgba(192, 63, 252,1);
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    padding-top:8px;
+    color:white;
+}
+.NavBar img:nth-child(1){
+    height:150px;
+    width:150px;
+  
+}
+.NavBar img:nth-child(2){
+ height:150px;
+  
+}
+.insideNavBar1{
+    position:relative;
+}
+.insideNavBar{
+  display:flex;
+  gap:40px;
+  position:absolute;
+  top:65px;
+  right:10px;
+}
+.dropDown>li button{
+    padding:5px;
+    margin-top:-10px;
+    border:none;
+    background-image:linear-gradient(to right,rgba(235, 196, 86, 1),rgba(235, 196, 86, 0.7));
+    box-shadow: 0px 3px 5px  gray;
+    color:white;
+}
+.dropDown>li a:hover{
+    color:rgba(235, 196, 86, 1);
+}
+.dropDown{
+    list-style-type: none;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+}
+
+.dropDown>li a{
+    text-decoration:none;
+    color:black;
+    
+}
+.dropDownInside>li a:hover{
+    margin-left:5px;
+}
+.dropDown li:nth-child(3):hover .dropDownInside {
+    display:block;
+    background-color:rgb(180, 48, 241);
+    border:0.7px solid rgb(60, 3, 87);
+    margin-top:10px;
+    padding:20px;
+}
+.dropDown li:nth-child(5):hover .dropDownInside {
+    display:block;
+    background-color:rgb(180, 48, 241);
+    border:0.7px solid rgb(60, 3, 87);
+    margin-top:10px;
+    padding:25px;
+}
+
+.dropDownInside{
+    list-style-type: none;
+    display:none;
+} 
+.dropDownInside>li a{
+    color:white;
+    line-height: 30px;
+}  
+
+/* The Whole Div */
+.whole{
+    background-image:url(./paper_background_image.avif);
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100%;
+}
+
+/* Cake Banner */
+.banner>img{
+    width:100%;   
+}
+
+/* About Us */
+.aboutUs{
+    margin-top:100px;
+    margin-left:30px;
+}
+.aboutUs>p{
+    margin-top:20px;
+}
+.aboutUsInside{
+    position:relative;
+}
+.aboutUsInside>img{
+    height:250px;
+    width:250px;
+    border-radius:50%;
+    position:absolute;
+    top:-200px;
+    right:130px;
+    border:10px solid rgb(212,175,55);
+    padding:5px;
+}
+
+/* Gold Arrow Icon inside About Us button */
+.goldArrowIcon{
+    color:white;
+    height:30px;
+    width:30px;
+    background-color: rgba(255, 240, 47, 1);
+    padding-top:10px;
+}
+.aboutUs>button{
+    padding:5px;
+    border:none;
+    background-image:linear-gradient(to right,rgba(192, 63, 252,0.7),rgba(192, 63, 252,1));
+    box-shadow: 0px 3px 5px  gray;
+    margin-top:40px;
+    color:white;  
+}
+
+/* Our Kind of Varieties */
+.inside>img{
+    height:200px;
+    width:200px;
+    border-radius:50%;
+    border:5px dotted rgb(212,175,55);
+    padding:5px;
+}
+.inside{
+    text-align:center;
+}
+.varieties{
+    margin-top:50px;
+    
+}
+.varieties>h1{
+    margin-left:20px;
+}
+.varietiesInside{
+   display:flex;
+   justify-content:center;
+   gap:30px; 
+   margin-top:20px; 
+}
+.inside>p{
+    font-weight:bold;
+}
+/* Best Sellers */
+.bestSales>img{
+    height:350px;
+    width:220px;
+    border-radius:5px;
+}
+.bestSales>button{
+    background-color:rgba(192, 63, 252,1);
+    border:none;
+    width: 220px;
+    padding:10px; 
+    border-radius:5px;
+    color:white;
+    font-weight:bold;
+}
+.bestSales>p{
+    color:rgba(255, 0, 3, 0.8);
+}
+.salesIcon{
+    font-size:15px;
+    color:green;
+}
+.bestSales{
+    width:280px;
+    text-align:center;
+    padding:10px;
+}
+.bestSales:hover{
+    box-shadow: 0 0 15px gray;
+    padding:15px;
+    background-image:linear-gradient(to right,rgba(235, 196, 86, 1),rgba(235, 196, 86, 0.7));
+}
+.bestSellers>h1,p{
+    margin-left:20px;   
+}
+.bestSellers{
+    margin-top:40px;
+}
+.wholeSale{
+    display:flex;
+    justify-content:center;
+    gap:5px;
+}
+/* End Banner */
+.endBanner{
+    background-color:rgba(192, 63, 252,1);
+    margin-top:100px;
+    color:white;
+    display:flex;
+    justify-content:space-around;
+    line-height: 40px; 
+}
+
+/* End Banner1 */
+.endBanner1>img{
+    height:200px;
+    width:200px;
+    
+}
+.endBannerPosition{
+    position:relative;
+    margin-left:15px;
+}
+.endBannerPosition>button{
+    padding:13px ;
+    position:absolute;
+    top:3px;
+    left:260px;
+    background-image: linear-gradient(to right,rgba(192, 63, 252,0.7),rgb(173, 10, 248));
+    border:none;
+    color:white; 
+
+}
+.endBanInput{
+    padding:15px;
+    outline:none;
+    background-color:transparent;
+    border:2px solid rgb(212,175,55);
+    width:350px;
+}
+::placeholder{
+    color:white;
+    opacity: 0.6;
+}
+/* End Banner2 */
+.endBanner2{
+    margin-top:40px;
+}
+.endBanner2 p:nth-child(1){
+    border-bottom:2px solid rgb(212,175,55);
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+/* End Banner3 */
+.endBanner3{
+    margin-top:40px;
+}
+.endBanner3 p:nth-child(1){
+    border-bottom:2px solid rgb(212,175,55);
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+/* End Banner4 */
+.endBanner4{
+    margin-top:40px;
+}
+.endBanner4 p:nth-child(1){
+    border-bottom:2px solid rgb(212,175,55);
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+/* Yellow End */
+.yellowEnd{
+    background-image:linear-gradient(to right,rgba(255, 240, 47, 1),rgba(255, 240, 47, 0.8),rgba(255, 240, 47, 1));
+    display:flex;
+    justify-content:center;
+    gap:800px;
+    padding:10px;
+
+}
+/* Yellow End1 */
+.yellowIcon{
+    color:rgb(48, 2, 70);
+    margin-left:10px;
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    border:0.2px dashed rgb(48, 2, 70);
+    text-align:center;
+    padding-top:5px;
+}
+
